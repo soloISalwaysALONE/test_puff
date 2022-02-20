@@ -1,15 +1,198 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>WBStat.PRO - Аналитика Wildberries</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="ionstudio.ru">
+    <meta name="HandheldFriendly" content="True">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,700i,900&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/iconkit/css/iconkit.min.css">
+    <link rel="stylesheet" href="assets/plugins/perfectscroll/css/perfectscroll.min.css">
+    <link rel="stylesheet" href="assets/plugins/fancybox/css/fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <script src="assets/plugins/modernizr/js/modernizr.min.js"></script>
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/newcss/style.css">
+    <link rel="stylesheet" href="assets/newcss/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/newcss/owl.theme.default.min.css">
+
+    <!-- NEW CSS-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image" href="#">
-    <title>TestPuff</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500;700&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' media='(max-width: 1800px) and (min-width: 1600px)' href='assets/newcss/1800.css' />
+    <link rel='stylesheet' media='(max-width: 1599px) and (min-width: 1366px)' href='assets/newcss/1366.css' />
+    <link rel='stylesheet' media='(max-width: 1365px) and (min-width: 1024px)' href='assets/newcss/1024.css' />
+    <link rel='stylesheet' media='(max-width: 1023px) and (min-width: 100px)' href='assets/newcss/512.css' />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    <header id="header" class="header"></header>
-    <script src="js/script.js"></script>
-</body>
+    <div class="spinner-grow text-purple"
+        style="position: absolute; top: 50%; left: 50%; margin-top: -1.5rem; margin-left: -1.5rem; width: 3rem; height: 3rem; z-index: 9999;"
+        role="status">
+        <span class="sr-only">Загрузка...</span>
+    </div>
+
+    <div class="helpholder">
+        <a href="" class="helpcenter"><i class="far fa-question-circle helpsd"></i> Помощь</a>
+    </div>
+
+    <!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+    <div class="wrapper d-none">
+        <header class="header-top" header-theme="light">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between">
+                    <div class="top-menu d-flex align-items-center">
+                        <button type="button" class="btn-icon mobile-nav-toggle d-lg-none"><span></span></button>
+                        <button type="button" class="nav-toggle nav-link mr-2"><i data-toggle="expanded"
+                                class="ik toggle-icon ik-toggle-right"></i></button>
+                        <button type="button" id="navbar-fullscreen" class="nav-link"><i
+                                class="ik ik-maximize"></i></button>
+                    </div>
+                    <div class="top-menu d-flex align-items-center">
+                        <span class="minirespomsive newtime">данные от 21 июня 2021 <i
+                                class="far fa-clock clockheder"></i> 21:00</span>
+                        <div class="dropdown dropdownltc">
+
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle rightside" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="avatar" src="https://avatars.mds.yandex.net/get-yapic/0/0-0/islands-34"
+                                    alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right blurprofile" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="user.html"><i class="ik ik-settings dropdown-icon"></i>
+                                    Настройки</a>
+                                <a class="dropdown-item" href="support.html"><i
+                                        class="ik ik-help-circle dropdown-icon"></i> Помощь</a>
+                                <a class="dropdown-item" href="logout.html"><i class="ik ik-power dropdown-icon"></i>
+                                    Выход</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="page-wrap">
+            <div class="app-sidebar colored">
+                <div class="sidebar-header">
+                    <a class="header-brand" href="/">
+                        <div class="logo-img">
+                            <img src="assets/img/logo.svg" class="header-brand-img" alt="WBSTAT.PRO">
+                        </div>
+                        <div class="newlogo hide">
+                            <img src="assets/img/logomini.svg" class="header-brand-img" width="50" alt="WBSTAT.PRO">
+                        </div>
+                    </a>
+                    <button id="sidebarClose" class="nav-close"><i class="ik ik-x"></i></button>
+                </div>
+                <div class="sidebar-content">
+                    <div class="nav-container">
+                        <nav id="main-menu-navigation" class="navigation-main">
+                            <div class="nav-item active">
+                                <a href="main.html" id="navigation_main"><i
+                                        class="ik ik-activity"></i><span>Проекты</span> </a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content onlyindex">
+                <div class="container-fluid main-container">
+                    <div class="name-project">
+                        <h1>У З К О Т Т О Н</h1>
+                    </div>
+
+                    <div class="menu-bar">
+                        <ul class="pagination">
+                            <li class=" page-item">
+                                <a href="#"class="menu-bar-item active">
+                                    <img class="icon-svg active" src="img/settings.svg"><br>
+                                    Товары</a>
+                                </li>
+                            <li class=" page-item"><a href="#" class="menu-bar-item">
+                                <img class="icon-svg" src="img/settings.svg"><br>
+                                Лиды</a>
+                            </li>
+                            <li class=" page-item"><a href="#" class="menu-bar-item">
+                                <img class="icon-svg" src="img/settings.svg"><br>
+                                Шаблоны</a>
+                            </li>
+                            <li class=" page-item"><a href="#"class="menu-bar-item">
+                                <img class="icon-svg" src="img/settings.svg"><br>
+                                SEO</a>
+                            </li>
+                            <li class=" page-item"><a class="menu-bar-item">
+                                <img class="icon-svg" src="img/settings.svg"><br>
+                                Настройки</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-about">
+                        <p>
+                            Список товаров, Вы можете добовлять изменять и удалять товары.
+                        </p>
+                    </div>
+
+                    <div class="col-md-12" id="good_62">
+                        <div class="card mb-3">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-xl-1 col-lg-3 col-4">
+                                <div class="imgcatalogs">	<a href="https://images.wbstatic.net/big/new/10420000/10429787-1.jpg" data-fancybox><img src="https://images.wbstatic.net/big/new/10000000/10002332-1.jpg" class="img-fluid imgcatalog" alt="К156/черно-желтыйчерно-желтый"></a> </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-7 pl-4 col-8">
+                                    <p class="text-muted mb-1"><a href="good.html" class="prodhref">Carlo Bottichelli Luxury Sport</a></p>
+                                    <h6 class="mb-10 mt-10">К155/желтыйжелтый</h6>
+                                    <p class="mb-2"><small class="artikulcard">Артикул WB: <a class="wildb" href="https://www.wildberries.ru/catalog/10002333/detail.aspx?targetUrl=SP" target="_blank" class="wb_link">10002333 <i class="fas fa-share-square"></i></a></small></p>
+                                    <div class="mb-2 small" id="light-42" data-selected="0"><a id="good-42"></a><a class="table-lights" href="javascript:goods_light(42);" data-toggle="tooltip" data-placement="top" data-original-title="Не известно"><i class="ik ik-star-on" style="color: gray;"></i> <span>Не известно</span></a></div>
+                                </div>
+                                <div class="col-xl-1 col-lg-2 text-nowrap text-center col-3 rightmobile">
+                                    <label class="switch mb-0" data-toggle="tooltip" data-placement="top" data-original-title="Видимость товара"><input type="checkbox" class="default" value="1" data-id="62" checked><span class="slider round"></span></label>
+                                </div>
+                                <div class="col-xl-1 col-lg-1 text-nowrap text-center col-3">
+                                    <a href="javascript:goods_delete(62);" class="text-danger newdelete" data-toggle="tooltip" data-placement="top" data-original-title="Архивировать товар"><i class="ik ik-trash-2"></i></a>
+                                </div>
+                                <div class="mobilehides col-12" style="display: none;"></div>
+                            </div>
+                        </div>
+                    </div> <img src="assets/img/shadow_bottom.png" class="shadowcatcard">
+
+                </div>
+            </div>
+            <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+            <script src="assets/plugins/perfectscroll/js/perfectscroll.min.js"></script>
+            <script src="assets/plugins/screenfull/js/screenfull.min.js"></script>
+            <script src="assets/plugins/cookie/js/cookie.min.js"></script>
+            <script src="assets/plugins/bootbox/js/bootbox.min.js"></script>
+            <script src="assets/plugins/fancybox/js/fancybox.min.js"></script>
+            <script src="assets/js/theme.js"></script>
+            <script src="assets/js/dashboard.js"></script>
+            <script src="assets/newcss/owl.carousel.min.js"></script>
+            <script src="assets/newcss/carousel.js"></script>
+
 </html>

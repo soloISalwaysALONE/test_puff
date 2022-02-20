@@ -1,0 +1,55 @@
+.name-project{
+    font-size: 20px;
+    height: 100px;
+    background: linear-gradient(#bcbebf, #fbfbfb);
+    
+}
+
+.main-container{
+    margin: 0 auto;
+}
+
+.menu-bar-item{
+	box-shadow: none !important;
+	line-height: 18px;
+	width: 50px;
+	text-align: center;
+	height: 50px;
+	padding: 6px 0px;
+	border: none;
+	background-color: #eaeaea;
+	color: #3e5569;
+}
+
+.menu-bar-item.active{
+	background-color: #8200a8 !important;
+	color: #fff !important;
+}
+
+.menu-bar-item:hover{
+	background-color: #8200a8 !important;
+	color: #fff !important;
+}
+
+.icon-svg {
+    width: 30px;
+    height: 30px;
+    fill: #3e5569;
+}
+
+.icon-svg:hover{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.icon-svg.active{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.text-block{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 140px;
+    color: #3e5569;
+    background-color: #f6f7fb;
+}
